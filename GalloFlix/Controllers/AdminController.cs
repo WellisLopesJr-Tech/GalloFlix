@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+
 namespace GalloFlix.Controllers;
 
-[Authorize(Roles = "Administrador")]
+
+[Authorize(Roles = "Adiminstrador")]
 public class AdminController : Controller
 {
     private readonly ILogger<AdminController> _logger;
